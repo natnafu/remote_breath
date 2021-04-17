@@ -1,6 +1,3 @@
-#include <Arduino.h>
-#include "math.h"
-
 // Pins
 #define PIN_TACH_IN  15
 #define PIN_FAN_OUT  23
@@ -9,9 +6,6 @@
 #define TIMEOUT_MS  1000
 
 void setup() {
-  Serial.begin(9600);
-
-  // Setup pin modes
   pinMode(PIN_TACH_IN, INPUT_PULLUP);
   pinMode(PIN_FAN_OUT, OUTPUT);
   digitalWrite(PIN_FAN_OUT, LOW);
